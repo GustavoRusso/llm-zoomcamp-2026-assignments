@@ -7,3 +7,13 @@ OPENAI_API_KEY=sk-YOUR_KEY_HERE
 ```
 
 Replace the texts on the right of equals for your personal keys for each requires service.
+
+
+
+## Install project dependencies locally
+
+On project root folder, run:
+
+uv sync
+
+
