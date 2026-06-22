@@ -15,5 +15,6 @@ dependencies = [
     "openai>=2.42.0",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
-    "agent_client"
+    "agent_client",
+    "toyaikit>=0.0.11",
 ]

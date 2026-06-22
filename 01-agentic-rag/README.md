@@ -14,6 +14,9 @@ Replace the texts on the right of equals for your personal keys for each require
 
 On project root folder, run:
 
+```bash
+pip install uv
 uv sync
+```
 
 
