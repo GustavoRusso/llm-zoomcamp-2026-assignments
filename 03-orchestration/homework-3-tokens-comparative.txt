@@ -1,0 +1,112 @@
+3. What is the approximate output token count for multilingual_agent when running with summary_length = short? (1 point) 
+	4_simple_agent.yaml with summary_length = short
+		LLM Studio	-> [google/gemma-4-e4b]
+			Multilingual Agent:
+			"usage": {
+				"prompt_tokens": 294,
+				"completion_tokens": 544,
+				"total_tokens": 838,
+				"completion_tokens_details": {
+				  "reasoning_tokens": 470
+				}
+			English Brevity Agent:
+			"usage": {
+				"prompt_tokens": 99,
+				"completion_tokens": 485,
+				"total_tokens": 584,
+				"completion_tokens_details": {
+				  "reasoning_tokens": 434
+				}
+		Gemini Cloud:
+			Multilingual Agent:
+				- Input tokens: 282
+				- Output tokens: 47
+				- Total tokens: 329
+
+				English Brevity Agent:
+				- Input tokens: 62
+				- Output tokens: 31
+				- Total tokens: 93
+				
+				
+Question 4: Token usage — long summary
+Run 4_simple_agent.yaml & english_brevity = 1 sencentences & with summary_length = long.
+		LLM Studio	-> [google/gemma-4-e4b]
+			Multilingual Agent:
+			"usage": {
+				"prompt_tokens": 294,
+				"completion_tokens": 690,
+				"total_tokens": 984,
+				"completion_tokens_details": {
+				  "reasoning_tokens": 485
+				}
+			English Brevity Agent:
+			"usage": {
+				"prompt_tokens": 230,
+				"completion_tokens": 602,
+				"total_tokens": 832,
+				"completion_tokens_details": {
+				  "reasoning_tokens": 533
+				}
+	
+		Gemini Cloud:
+			Multilingual Agent:
+				- Input tokens: 282
+				- Output tokens: 187
+				- Total tokens: 469
+
+				English Brevity Agent:
+				- Input tokens: 202
+				- Output tokens: 45
+				- Total tokens: 247
+				
+
+Question 5: Modifying a flow
+4_simple_agent.yaml & english_brevity = 3 sencentences & with summary_length = long.
+		LLM Studio	-> [google/gemma-4-e4b]
+			Multilingual Agent:
+			 "usage": {
+				"prompt_tokens": 294,
+				"completion_tokens": 628,
+				"total_tokens": 922,
+				"completion_tokens_details": {
+				  "reasoning_tokens": 425
+				}
+			English Brevity Agent:
+			 "usage": {
+				"prompt_tokens": 228,
+				"completion_tokens": 687,
+				"total_tokens": 915,
+				"completion_tokens_details": {
+				  "reasoning_tokens": 581
+				}
+				
+		Gemini Cloud:
+			Multilingual Agent:
+			- Input tokens: 282
+			- Output tokens: 183
+			- Total tokens: 465
+
+			English Brevity Agent:
+			- Input tokens: 198
+			- Output tokens: 83
+			- Total tokens: 281
+			
+
+		LLM Studio	-> google/gemma-4-12b
+			Multilingual Agent:	
+				"usage": {
+					"prompt_tokens": 294,
+					"completion_tokens": 644,
+					"total_tokens": 938,
+					"completion_tokens_details": {
+					  "reasoning_tokens": 493
+					}
+			English Brevity Agent:
+				"usage": {
+					"prompt_tokens": 176,
+					"completion_tokens": 663,
+					"total_tokens": 839,
+					"completion_tokens_details": {
+					  "reasoning_tokens": 572
+					}
