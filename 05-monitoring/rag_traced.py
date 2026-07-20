@@ -19,7 +19,10 @@ class RAGTraced(RAGBaseHw5):
     def llm(self, prompt):
         with self.tracer.start_as_current_span("llm") as span:
             span.set_attribute("prompt", prompt)
-            return super().llm(prompt)
+            response = super().llm(prompt)
+            span.set_attribute("input_tokens", response.usage.input_tokens)
+            span.set_attribute("output_tokens", response.usage.output_tokens)
+            return response
 
     def rag(self, query):
         with self.tracer.start_as_current_span("rag") as span:
